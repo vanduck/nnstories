@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nnstories_2022/car_module.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,6 +52,9 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 111;
 
   void _incrementCounter() {
+    registered(name: "Mazda", speed: 100);
+    registered(name: "Mazda");
+    registered();
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -58,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter--;
+
     });
   }
 
