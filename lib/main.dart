@@ -55,6 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
     registered(name: "Mazda", speed: 100);
     registered(name: "Mazda");
     registered();
+    registeredThree();
+    registeredThree(name1: "Mazda", speed1: 100, name2: "MB", speed2: 56, name3: "Porshe", speed3: 155);
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
